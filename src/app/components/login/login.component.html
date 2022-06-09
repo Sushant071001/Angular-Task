@@ -1,0 +1,160 @@
+<app-header></app-header>
+
+<div class="wrapper">
+
+    <div class="container">
+        <p class="heading">Welcome Please Login / create account</p>
+
+        <div class="row " style="margin-bottom: 80px;">
+
+            <div class="col-12 col-sm-12 col-lg-6 mt-1 ">
+
+                <div class="card shadow h-100">
+
+                    <div class="card-body px-5">
+
+                        <h4 class="card-title">log in</h4>
+
+                        <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+
+                            <div class="input-placeholder mt-3">
+                                <input type="text" class="form-control" formControlName="email" name="email" required>
+                                
+                                <div class="placeholder">
+                                    email address <span>*</span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="input-placeholder mt-3">
+                                <input type="password" class="form-control" formControlName="password" name="password"
+                                    required>
+                                
+                                <div class="placeholder">
+                                    password <span>*</span>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex" style="justify-content: space-between;">
+
+                                <div>
+
+                                    <div class="custom-control custom-checkbox mt-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1">
+                                        <label class="custom-control-label" for="customCheck1">remember me</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-3">
+                                    <a href="" class="forget"> <u>forget password</u> </a>
+                                </div>
+
+                            </div>
+
+                            <input type="submit" class="btn btn-primary w-100 mt-3 btnSubmit" value="Login" name="">
+
+                            <div class="py-4">
+                                <h5><span>or</span></h5>
+                            </div>
+
+                            <div class="d-flex" style="justify-content: space-between;">
+                                <a href="#" class="fb btn">
+                                    <i class="fa fa-facebook fa-fw"></i> Sign in with Facebook
+                                </a>
+                                <a href="#" class="google btn ml-1"><i class="fa fa-google fa-fw">
+                                    </i> Sign in with Google+
+                                </a>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-sm-12 col-lg-6 mt-1">
+
+                <div class="card shadow h-100">
+
+                    <div class="card-body px-5">
+
+                        <h4 class="card-title">create an account</h4>
+                        <form [formGroup]="registerForm">
+
+                            <div class="input-placeholder">
+                                <input type="text" class="form-control" required>
+                                <div class="placeholder">
+                                    full name <span>*</span>
+                                </div>
+                            </div>
+
+                            <div class="input-placeholder mt-3">
+                                <input type="text" class="form-control" required>
+                                <div class="placeholder">
+                                    email address <span>*</span>
+                                </div>
+                            </div>
+
+                            <div class="input-placeholder mt-3">
+                                <input type="password" class="form-control" required>
+                                <div class="placeholder">
+                                    password <span>*</span>
+                                </div>
+                            </div>
+                            
+                            <div class="input-placeholder mt-3">
+                                <input type="password" class="form-control" required>
+                                <div class="placeholder">
+                                    confirm password <span>*</span>
+                                </div>
+                            </div>
+                            <div class="input-placeholder mt-3">
+                                <input type="text" class="form-control" required>
+                                <div class="placeholder">
+                                    interests <span>*</span>
+                                </div>
+                            </div>
+
+                            <div class="input-placeholder mt-3">
+                                <input type="text" class="form-control" required>
+                                <div class="placeholder">
+                                    preferred size <span>*</span>
+                                </div>
+                            </div>
+                            
+                            <div class="custom-control custom-checkbox mt-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                                <label class="custom-control-label" for="customCheck">News letter</label>
+                            </div>
+
+                            
+                            <div class="custom-control custom-checkbox mt-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1">
+                                <label class="custom-control-label" for="customCheck1">by registering you agree with t&c and privacy policy.</label>
+                            </div>
+
+                            <input type="submit" class="btn btn-primary w-100 mt-3  btnSubmit" value="Create Account"
+                                name="">
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="mt-4">
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,89 @@
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.input-placeholder {
+  position: relative;
+}
+
+.input-placeholder input {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.input-placeholder input:valid+.placeholder {
+  display: none;
+}
+
+.placeholder {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  height: 25px;
+  font-size: 14px;
+  left: 10px;
+  margin: auto;
+  color: #ccc;
+}
+
+.placeholder span {
+  color: red;
+}
+
+.heading {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btnSubmit {
+  background-color: rgb(193, 0, 0);
+  border: 2px solid rgb(193, 0, 0);
+  color: white;
+}
+
+.btnSubmit:hover {
+  background-color: white;
+  color: rgb(193, 0, 0);
+}
+
+.forget{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+.custom-control-label{
+  font-weight: 500;
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+h5 {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid lightgray; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+
+h5 span { 
+   background:#fff; 
+   padding:0 10px; 
+}
